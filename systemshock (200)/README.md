@@ -1,3 +1,5 @@
-change README.md file content.
+﻿change encoding to UTF-8
 
-This is README.md file.
+support korea language
+
+야호
