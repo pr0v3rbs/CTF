@@ -1,1 +1,1 @@
-DEFCON23 OCTF Writeup
+DEF CON 23 OpenCTF Write-up
