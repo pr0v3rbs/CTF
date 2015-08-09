@@ -9,7 +9,7 @@
 
 Binary file is given.
 
-First, I decomplied binary file. And It was so simple binary.
+First, I decomplied the binary file. And It was a so simple binary.
 
 ```c
 int main(int argc, const char **argv, const char **envp)
