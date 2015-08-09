@@ -1,5 +1,5 @@
 #enhance
-**Category:** Forensic, misc, CSI
+**Category:** misc, forensic, CSI
 **Point:** 50
 **Description:**
 
@@ -9,8 +9,8 @@
 
 The big size picture(10480x7016) is given.
 
-There are 35x35 size QR-Code on her left-eye in picture.
+There was 35x35 size QR-Code on her left-eye in picture.
 
-If scan the QR-Code, we can get the flag.
+Scan the QR-Code, and then I got the flag.
 
 The flag is `Ju5tPr1ntTheDAmNTh1n6`

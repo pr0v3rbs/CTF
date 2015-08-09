@@ -1,9 +1,9 @@
 #Sanity Check
-**Category:** Misc
+**Category:** trivia
 **Point:** 10
 **Description:**
 
-> Sanity Check 10 --- Hack the ______\!
+> Hack the ______\!
 
 ##Write-up
 
