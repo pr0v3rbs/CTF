@@ -15,7 +15,7 @@ I looked closely at the source code. I found that 'for loop' didn't print all de
 
 I looked closely at the source code harder!. And I found that source code have many 'tab', 'space', 'line feed' more than normal.
 
-I makde the whitespace source code from c source code. And excuted on 'http://www.tutorialspoint.com/execute_whitespace_online.php'.
+I made the whitespace source code from c source code. And excuted on http://www.tutorialspoint.com/execute_whitespace_online.php
 
 ```python
 # MakeWhiteSpace.py
@@ -43,6 +43,6 @@ for i in data :
 print result
 ```
 
-Finally I got the rest of flag ` lo0kin-fo]`. I got the real flag by concatenated two string. `f1@g[This is not the code you're lo0kin-fo]`
+Finally I got the rest of flag ' lo0kin-fo]'. I got the real flag by concatenated two string. `f1@g[This is not the code you're lo0kin-fo]`
 
 The flag is `This is not the code you're lo0kin-fo`
