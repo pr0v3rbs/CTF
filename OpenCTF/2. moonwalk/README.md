@@ -40,7 +40,7 @@ f.close()
 
 And I was used 'Accessdata FTK imager' forensic tool to analyze 'metsys.elif' filesystem file.
 
-Finally I found 'txt.galf' file, and I reversed it by 4bit base. I got flag.
+Finally I found 'txt.galf' file in 'filesystem', and I reversed it by 4bit base. I got flag.
 
 ```python
 # Reverse4bit.py
