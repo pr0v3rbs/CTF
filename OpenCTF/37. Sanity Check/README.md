@@ -1,6 +1,8 @@
 #Sanity Check
-**Category:** Misc **Point:** 10 **Description:**
+**Category:** Misc
+**Point:** 10
+**Description:**
 
-```Sanity Check 10 --- Hack the ______\!```
+> Sanity Check 10 --- Hack the ______\!
 
-The flag is ```Planet```
+The flag is `Planet`
