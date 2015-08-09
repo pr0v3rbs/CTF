@@ -31,7 +31,7 @@ It was just make memory map, read 0x10byte from user, and execute code it.
 
 And I checked security of binary. No NX, ASLR is on(maybe?). If ASLR is on, we can't use RTL easily.
 
-```
+```Assembly
 0x400606:	call   0x400490 <memset@plt>
 0x40060b:	mov    rax,QWORD PTR [rbp-0x8]
 0x40060f:	mov    edx,0x10
