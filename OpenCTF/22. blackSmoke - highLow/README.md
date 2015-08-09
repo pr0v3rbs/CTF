@@ -140,8 +140,6 @@ Program was printed a `The Key is : theBankIsAlwaysRight` string.
 
 But 'theBankIsAlwaysRight' is not the real key. :(
 
-So I captured packet when program print a string, I can find the key.
-
 I found the key by capturing packets when program printing the string.
 
 The flag is `theBankIsAlwaysRightButAreTheTellers`
