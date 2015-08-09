@@ -31,29 +31,20 @@ It was just make memory map, read 0x10byte from user, and execute code it.
 
 And I checked security of binary. No NX, ASLR is on(maybe?). If ASLR is on, we can't use RTL easily.
 
+```
 > 0x400606:	call   0x400490 <memset@plt>
->
 > 0x40060b:	mov    rax,QWORD PTR [rbp-0x8]
->
 > 0x40060f:	mov    edx,0x10
->
 > 0x400614:	mov    rsi,rax
->
 > 0x400617:	mov    edi,0x0
->
 > 0x40061c:	call   0x4004a0 <read@plt>  // to this address
->
 > 0x400621:	mov    rdx,QWORD PTR [rbp-0x8]
->
 > 0x400625:	mov    eax,0x0
->
 > 0x40062a:	call   rdx
->
 > 0x40062c:	mov    eax,0x0
->
 > 0x400631:	leave
->
 > 0x400632:	ret
+```
 
 So I sent 'mov edx, 0x50; mov eax, 0x40061c; call rax' asm code to make the program execute 'read function' of main. And I send the shellcode to obtain the shell.
 
