@@ -29,7 +29,7 @@ It was just make memory map, read 0x10byte from user, and execute code it.
 
 0x10byte is too small to send a 64bit shellcode.
 
-And I checked security of binary. No NX, ASLR is on(maybe?). If ASLR is on, we can't use RTL easily.
+And I checked security of binary. ASLR was on(maybe?). If ASLR is on, we can't use RTL easily.
 
 ```Assembly
 0x400606:	call   0x400490 <memset@plt>
