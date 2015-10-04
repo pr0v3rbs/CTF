@@ -67,7 +67,7 @@ But, there is a hole in parent-program.
 ```c
 		if ((short)cmd[0] == 3)	// 127 line
 		{
-			read(pipe2[0], cmd, 1);	// cmd[0] overwrite cmd[0] value
+			read(pipe2[0], cmd, 1);	// overwrite cmd[0] value
 			int temCnt;
 			int bufCnt = (short)cmd[0];
 			if (bufCnt <= 0x7F)
@@ -81,7 +81,7 @@ But, there is a hole in parent-program.
 		}
 ```
 
-cmd-value can change when child-program send 'nameCat' cmd to parent-program using by cat name length.
+cmd-value can be changed when child-program send 'nameCat' cmd to parent-program by cat name length.
 
 But buffer of cat-name is not initialize in ParseCatName() function.
 
@@ -105,7 +105,7 @@ char* ParseCatName(char* userCmdBuf)
 }
 ```
 
-So catName buffer has 0x41 size sometimes.
+So catName buffer has 0x41 size sometimes. And if buffer have 0x41 size, then parent process send key-string to child process.
 
 And there are BOF vulnerability, too.
 
