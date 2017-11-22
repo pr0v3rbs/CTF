@@ -1,0 +1,668 @@
+```Assembly
+   0xb7fda000:	push   ebp
+   0xb7fda001:	mov    ebp,esp
+   0xb7fda003:	push   esi
+   0xb7fda004:	push   ebx
+   0xb7fda005:	sub    esp,0x790
+   0xb7fda00b:	mov    eax,DWORD PTR [ebp+0x8]
+   0xb7fda00e:	mov    DWORD PTR [ebp-0x76c],eax
+   0xb7fda014:	mov    eax,DWORD PTR [ebp+0xc]
+   0xb7fda017:	mov    DWORD PTR [ebp-0x770],eax
+   0xb7fda01d:	mov    eax,DWORD PTR [ebp+0x10]
+   0xb7fda020:	mov    DWORD PTR [ebp-0x774],eax
+   0xb7fda026:	mov    eax,DWORD PTR [ebp+0x14]
+   0xb7fda029:	mov    DWORD PTR [ebp-0x778],eax
+   0xb7fda02f:	mov    eax,DWORD PTR [ebp+0x18]
+   0xb7fda032:	mov    DWORD PTR [ebp-0x77c],eax
+   0xb7fda038:	mov    eax,gs:0x14
+   0xb7fda03e:	mov    DWORD PTR [ebp-0xc],eax
+   0xb7fda041:	xor    eax,eax
+   0xb7fda043:	mov    DWORD PTR [ebp-0x5a8],0x6362696c
+   0xb7fda04d:	mov    DWORD PTR [ebp-0x5a4],0x6c79642e
+   0xb7fda057:	mov    WORD PTR [ebp-0x5a0],0x6269
+   0xb7fda060:	mov    BYTE PTR [ebp-0x59e],0x0
+   0xb7fda067:	mov    DWORD PTR [ebp-0x5bc],0x6362696c
+   0xb7fda071:	mov    DWORD PTR [ebp-0x5b8],0x2e6f732e
+   0xb7fda07b:	mov    WORD PTR [ebp-0x5b4],0x36
+   0xb7fda084:	mov    DWORD PTR [esp+0x4],0x101
+   0xb7fda08c:	lea    eax,[ebp-0x5bc]
+   0xb7fda092:	mov    DWORD PTR [esp],eax
+   0xb7fda095:	mov    eax,DWORD PTR [ebp-0x76c]
+   0xb7fda09b:	call   eax
+   0xb7fda09d:	mov    DWORD PTR [ebp-0x75c],eax
+   0xb7fda0a3:	cmp    DWORD PTR [ebp-0x75c],0xffffffff
+   0xb7fda0aa:	je     0xb7fda0b8
+   0xb7fda0ac:	mov    eax,DWORD PTR [ebp-0x774]
+   0xb7fda0b2:	call   eax
+   0xb7fda0b4:	test   eax,eax
+   0xb7fda0b6:	je     0xb7fda0d7
+   0xb7fda0b8:	mov    DWORD PTR [esp+0x4],0x102
+   0xb7fda0c0:	lea    eax,[ebp-0x5a8]
+   0xb7fda0c6:	mov    DWORD PTR [esp],eax
+   0xb7fda0c9:	mov    eax,DWORD PTR [ebp-0x76c]
+   0xb7fda0cf:	call   eax
+   0xb7fda0d1:	mov    DWORD PTR [ebp-0x75c],eax
+   0xb7fda0d7:	mov    eax,DWORD PTR [ebp-0x774]
+   0xb7fda0dd:	call   eax
+   0xb7fda0df:	test   eax,eax
+   0xb7fda0e1:	je     0xb7fda0e8
+   0xb7fda0e3:	jmp    0xb7fdaeb3
+   0xb7fda0e8:	mov    DWORD PTR [ebp-0x665],0x62746573
+   0xb7fda0f2:	mov    WORD PTR [ebp-0x661],0x6675
+   0xb7fda0fb:	mov    BYTE PTR [ebp-0x65f],0x0
+   0xb7fda102:	lea    eax,[ebp-0x665]
+   0xb7fda108:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda10c:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda112:	mov    DWORD PTR [esp],eax
+   0xb7fda115:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda11b:	call   eax
+   0xb7fda11d:	mov    DWORD PTR [ebp-0x750],eax
+   0xb7fda123:	mov    DWORD PTR [ebp-0x68f],0x6e617273
+   0xb7fda12d:	mov    WORD PTR [ebp-0x68b],0x64
+   0xb7fda136:	lea    eax,[ebp-0x68f]
+   0xb7fda13c:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda140:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda146:	mov    DWORD PTR [esp],eax
+   0xb7fda149:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda14f:	call   eax
+   0xb7fda151:	mov    DWORD PTR [ebp-0x74c],eax
+   0xb7fda157:	mov    DWORD PTR [ebp-0x6ad],0x656d6974
+   0xb7fda161:	mov    BYTE PTR [ebp-0x6a9],0x0
+   0xb7fda168:	lea    eax,[ebp-0x6ad]
+   0xb7fda16e:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda172:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda178:	mov    DWORD PTR [esp],eax
+   0xb7fda17b:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda181:	call   eax
+   0xb7fda183:	mov    DWORD PTR [ebp-0x748],eax
+   0xb7fda189:	mov    DWORD PTR [ebp-0x65e],0x6e697270
+   0xb7fda193:	mov    WORD PTR [ebp-0x65a],0x6674
+   0xb7fda19c:	mov    BYTE PTR [ebp-0x658],0x0
+   0xb7fda1a3:	lea    eax,[ebp-0x65e]
+   0xb7fda1a9:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda1ad:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda1b3:	mov    DWORD PTR [esp],eax
+   0xb7fda1b6:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda1bc:	call   eax
+   0xb7fda1be:	mov    DWORD PTR [ebp-0x744],eax
+   0xb7fda1c4:	mov    DWORD PTR [ebp-0x6a8],0x646e6172
+   0xb7fda1ce:	mov    BYTE PTR [ebp-0x6a4],0x0
+   0xb7fda1d5:	lea    eax,[ebp-0x6a8]
+   0xb7fda1db:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda1df:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda1e5:	mov    DWORD PTR [esp],eax
+   0xb7fda1e8:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda1ee:	call   eax
+   0xb7fda1f0:	mov    DWORD PTR [ebp-0x740],eax
+   0xb7fda1f6:	mov    DWORD PTR [ebp-0x5f5],0x63746567
+   0xb7fda200:	mov    DWORD PTR [ebp-0x5f1],0x726168
+   0xb7fda20a:	lea    eax,[ebp-0x5f5]
+   0xb7fda210:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda214:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda21a:	mov    DWORD PTR [esp],eax
+   0xb7fda21d:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda223:	call   eax
+   0xb7fda225:	mov    DWORD PTR [ebp-0x73c],eax
+   0xb7fda22b:	mov    DWORD PTR [ebp-0x657],0x6b636f73
+   0xb7fda235:	mov    WORD PTR [ebp-0x653],0x7465
+   0xb7fda23e:	mov    BYTE PTR [ebp-0x651],0x0
+   0xb7fda245:	lea    eax,[ebp-0x657]
+   0xb7fda24b:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda24f:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda255:	mov    DWORD PTR [esp],eax
+   0xb7fda258:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda25e:	call   eax
+   0xb7fda260:	mov    DWORD PTR [ebp-0x738],eax
+   0xb7fda266:	mov    DWORD PTR [ebp-0x650],0x736d656d
+   0xb7fda270:	mov    WORD PTR [ebp-0x64c],0x7465
+   0xb7fda279:	mov    BYTE PTR [ebp-0x64a],0x0
+   0xb7fda280:	lea    eax,[ebp-0x650]
+   0xb7fda286:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda28a:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda290:	mov    DWORD PTR [esp],eax
+   0xb7fda293:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda299:	call   eax
+   0xb7fda29b:	mov    DWORD PTR [ebp-0x734],eax
+   0xb7fda2a1:	mov    DWORD PTR [ebp-0x5b2],0x74656e69
+   0xb7fda2ab:	mov    DWORD PTR [ebp-0x5ae],0x6464615f
+   0xb7fda2b5:	mov    WORD PTR [ebp-0x5aa],0x72
+   0xb7fda2be:	lea    eax,[ebp-0x5b2]
+   0xb7fda2c4:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda2c8:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda2ce:	mov    DWORD PTR [esp],eax
+   0xb7fda2d1:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda2d7:	call   eax
+   0xb7fda2d9:	mov    DWORD PTR [ebp-0x730],eax
+   0xb7fda2df:	mov    DWORD PTR [ebp-0x689],0x6e6f7468
+   0xb7fda2e9:	mov    WORD PTR [ebp-0x685],0x73
+   0xb7fda2f2:	lea    eax,[ebp-0x689]
+   0xb7fda2f8:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda2fc:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda302:	mov    DWORD PTR [esp],eax
+   0xb7fda305:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda30b:	call   eax
+   0xb7fda30d:	mov    DWORD PTR [ebp-0x72c],eax
+   0xb7fda313:	mov    DWORD PTR [ebp-0x6a3],0x74697865
+   0xb7fda31d:	mov    BYTE PTR [ebp-0x69f],0x0
+   0xb7fda324:	lea    eax,[ebp-0x6a3]
+   0xb7fda32a:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda32e:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda334:	mov    DWORD PTR [esp],eax
+   0xb7fda337:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda33d:	call   eax
+   0xb7fda33f:	mov    DWORD PTR [ebp-0x728],eax
+   0xb7fda345:	mov    DWORD PTR [ebp-0x5ed],0x6e6e6f63
+   0xb7fda34f:	mov    DWORD PTR [ebp-0x5e9],0x746365
+   0xb7fda359:	lea    eax,[ebp-0x5ed]
+   0xb7fda35f:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda363:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda369:	mov    DWORD PTR [esp],eax
+   0xb7fda36c:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda372:	call   eax
+   0xb7fda374:	mov    DWORD PTR [ebp-0x724],eax
+   0xb7fda37a:	mov    DWORD PTR [ebp-0x69e],0x64616572
+   0xb7fda384:	mov    BYTE PTR [ebp-0x69a],0x0
+   0xb7fda38b:	lea    eax,[ebp-0x69e]
+   0xb7fda391:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda395:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda39b:	mov    DWORD PTR [esp],eax
+   0xb7fda39e:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda3a4:	call   eax
+   0xb7fda3a6:	mov    DWORD PTR [ebp-0x720],eax
+   0xb7fda3ac:	mov    DWORD PTR [ebp-0x683],0x74697277
+   0xb7fda3b6:	mov    WORD PTR [ebp-0x67f],0x65
+   0xb7fda3bf:	lea    eax,[ebp-0x683]
+   0xb7fda3c5:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda3c9:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda3cf:	mov    DWORD PTR [esp],eax
+   0xb7fda3d2:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda3d8:	call   eax
+   0xb7fda3da:	mov    DWORD PTR [ebp-0x71c],eax
+   0xb7fda3e0:	mov    DWORD PTR [ebp-0x67d],0x73756c66
+   0xb7fda3ea:	mov    WORD PTR [ebp-0x679],0x68
+   0xb7fda3f3:	lea    eax,[ebp-0x67d]
+   0xb7fda3f9:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda3fd:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda403:	mov    DWORD PTR [esp],eax
+   0xb7fda406:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda40c:	call   eax
+   0xb7fda40e:	mov    DWORD PTR [ebp-0x718],eax
+   0xb7fda414:	mov    DWORD PTR [ebp-0x649],0x63727473
+   0xb7fda41e:	mov    WORD PTR [ebp-0x645],0x706d
+   0xb7fda427:	mov    BYTE PTR [ebp-0x643],0x0
+   0xb7fda42e:	lea    eax,[ebp-0x649]
+   0xb7fda434:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda438:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda43e:	mov    DWORD PTR [esp],eax
+   0xb7fda441:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda447:	call   eax
+   0xb7fda449:	mov    DWORD PTR [ebp-0x714],eax
+   0xb7fda44f:	mov    DWORD PTR [ebp-0x5e5],0x6e727473
+   0xb7fda459:	mov    DWORD PTR [ebp-0x5e1],0x706d63
+   0xb7fda463:	lea    eax,[ebp-0x5e5]
+   0xb7fda469:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda46d:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda473:	mov    DWORD PTR [esp],eax
+   0xb7fda476:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda47c:	call   eax
+   0xb7fda47e:	mov    DWORD PTR [ebp-0x710],eax
+   0xb7fda484:	mov    DWORD PTR [ebp-0x677],0x736f6c63
+   0xb7fda48e:	mov    WORD PTR [ebp-0x673],0x65
+   0xb7fda497:	lea    eax,[ebp-0x677]
+   0xb7fda49d:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda4a1:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda4a7:	mov    DWORD PTR [esp],eax
+   0xb7fda4aa:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda4b0:	call   eax
+   0xb7fda4b2:	mov    DWORD PTR [ebp-0x70c],eax
+   0xb7fda4b8:	mov    DWORD PTR [ebp-0x642],0x61727470
+   0xb7fda4c2:	mov    WORD PTR [ebp-0x63e],0x6563
+   0xb7fda4cb:	mov    BYTE PTR [ebp-0x63c],0x0
+   0xb7fda4d2:	lea    eax,[ebp-0x642]
+   0xb7fda4d8:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda4dc:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda4e2:	mov    DWORD PTR [esp],eax
+   0xb7fda4e5:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda4eb:	call   eax
+   0xb7fda4ed:	mov    DWORD PTR [ebp-0x708],eax
+   0xb7fda4f3:	mov    DWORD PTR [ebp-0x671],0x65706f70
+   0xb7fda4fd:	mov    WORD PTR [ebp-0x66d],0x6e
+   0xb7fda506:	lea    eax,[ebp-0x671]
+   0xb7fda50c:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda510:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda516:	mov    DWORD PTR [esp],eax
+   0xb7fda519:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda51f:	call   eax
+   0xb7fda521:	mov    DWORD PTR [ebp-0x704],eax
+   0xb7fda527:	mov    DWORD PTR [ebp-0x63b],0x6f6c6370
+   0xb7fda531:	mov    WORD PTR [ebp-0x637],0x6573
+   0xb7fda53a:	mov    BYTE PTR [ebp-0x635],0x0
+   0xb7fda541:	lea    eax,[ebp-0x63b]
+   0xb7fda547:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda54b:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda551:	mov    DWORD PTR [esp],eax
+   0xb7fda554:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda55a:	call   eax
+   0xb7fda55c:	mov    DWORD PTR [ebp-0x700],eax
+   0xb7fda562:	mov    DWORD PTR [ebp-0x66b],0x74656766
+   0xb7fda56c:	mov    WORD PTR [ebp-0x667],0x73
+   0xb7fda575:	lea    eax,[ebp-0x66b]
+   0xb7fda57b:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda57f:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda585:	mov    DWORD PTR [esp],eax
+   0xb7fda588:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda58e:	call   eax
+   0xb7fda590:	mov    DWORD PTR [ebp-0x6fc],eax
+   0xb7fda596:	mov    DWORD PTR [ebp-0x634],0x6c727473
+   0xb7fda5a0:	mov    WORD PTR [ebp-0x630],0x6e65
+   0xb7fda5a9:	mov    BYTE PTR [ebp-0x62e],0x0
+   0xb7fda5b0:	lea    eax,[ebp-0x634]
+   0xb7fda5b6:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda5ba:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda5c0:	mov    DWORD PTR [esp],eax
+   0xb7fda5c3:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda5c9:	call   eax
+   0xb7fda5cb:	mov    DWORD PTR [ebp-0x6f8],eax
+   0xb7fda5d1:	mov    DWORD PTR [ebp-0x699],0x646e6573
+   0xb7fda5db:	mov    BYTE PTR [ebp-0x695],0x0
+   0xb7fda5e2:	lea    eax,[ebp-0x699]
+   0xb7fda5e8:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda5ec:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda5f2:	mov    DWORD PTR [esp],eax
+   0xb7fda5f5:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda5fb:	call   eax
+   0xb7fda5fd:	mov    DWORD PTR [ebp-0x6f4],eax
+   0xb7fda603:	mov    DWORD PTR [ebp-0x694],0x76636572
+   0xb7fda60d:	mov    BYTE PTR [ebp-0x690],0x0
+   0xb7fda614:	lea    eax,[ebp-0x694]
+   0xb7fda61a:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda61e:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda624:	mov    DWORD PTR [esp],eax
+   0xb7fda627:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda62d:	call   eax
+   0xb7fda62f:	mov    DWORD PTR [ebp-0x6f0],eax
+   0xb7fda635:	mov    DWORD PTR [ebp-0x62d],0x63727473
+   0xb7fda63f:	mov    WORD PTR [ebp-0x629],0x7461
+   0xb7fda648:	mov    BYTE PTR [ebp-0x627],0x0
+   0xb7fda64f:	lea    eax,[ebp-0x62d]
+   0xb7fda655:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda659:	mov    eax,DWORD PTR [ebp-0x75c]
+   0xb7fda65f:	mov    DWORD PTR [esp],eax
+   0xb7fda662:	mov    eax,DWORD PTR [ebp-0x770]
+   0xb7fda668:	call   eax
+   0xb7fda66a:	mov    DWORD PTR [ebp-0x6ec],eax
+   0xb7fda670:	mov    DWORD PTR [ebp-0x59d],0x6b696c6e
+   0xb7fda67a:	mov    DWORD PTR [ebp-0x599],0x59485365
+   0xb7fda684:	mov    WORD PTR [ebp-0x595],0x5459
+   0xb7fda68d:	mov    BYTE PTR [ebp-0x593],0x0
+   0xb7fda694:	mov    DWORD PTR [ebp-0x56a],0x796c6f48
+   0xb7fda69e:	mov    DWORD PTR [ebp-0x566],0x676e6120
+   0xb7fda6a8:	mov    DWORD PTR [ebp-0x562],0x73206c65
+   0xb7fda6b2:	mov    DWORD PTR [ebp-0x55e],0xa627574
+   0xb7fda6bc:	mov    BYTE PTR [ebp-0x55a],0x0
+   0xb7fda6c3:	mov    DWORD PTR [ebp-0x61f],0x5259454b
+   0xb7fda6cd:	mov    WORD PTR [ebp-0x61b],0x5145
+   0xb7fda6d6:	mov    BYTE PTR [ebp-0x619],0x0
+   0xb7fda6dd:	mov    DWORD PTR [ebp-0x559],0x212b3028
+   0xb7fda6e7:	mov    DWORD PTR [ebp-0x555],0x23042220
+   0xb7fda6f1:	mov    DWORD PTR [ebp-0x551],0x18203a0d
+   0xb7fda6fb:	mov    DWORD PTR [ebp-0x54d],0x203c3125
+   0xb7fda705:	mov    DWORD PTR [ebp-0x549],0xed9c512b
+   0xb7fda70f:	mov    WORD PTR [ebp-0x545],0x7fd2
+   0xb7fda718:	mov    BYTE PTR [ebp-0x543],0x0
+   0xb7fda71f:	mov    DWORD PTR [ebp-0x542],0x34393964
+   0xb7fda729:	mov    DWORD PTR [ebp-0x53e],0x34383233
+   0xb7fda733:	mov    DWORD PTR [ebp-0x53a],0x62396133
+   0xb7fda73d:	mov    DWORD PTR [ebp-0x536],0x39316634
+   0xb7fda747:	mov    DWORD PTR [ebp-0x532],0x32373562
+   0xb7fda751:	mov    DWORD PTR [ebp-0x52e],0x64353433
+   0xb7fda75b:	mov    DWORD PTR [ebp-0x52a],0x30646434
+   0xb7fda765:	mov    DWORD PTR [ebp-0x526],0x62613332
+   0xb7fda76f:	mov    DWORD PTR [ebp-0x522],0x6c2f2020
+   0xb7fda779:	mov    DWORD PTR [ebp-0x51e],0x32336269
+   0xb7fda783:	mov    DWORD PTR [ebp-0x51a],0x62696c2f
+   0xb7fda78d:	mov    DWORD PTR [ebp-0x516],0x2e322d63
+   0xb7fda797:	mov    DWORD PTR [ebp-0x512],0x732e3931
+   0xb7fda7a1:	mov    WORD PTR [ebp-0x50e],0x6f
+   0xb7fda7aa:	mov    DWORD PTR [ebp-0x5dd],0x654b6564
+   0xb7fda7b4:	mov    DWORD PTR [ebp-0x5d9],0x617262
+   0xb7fda7be:	mov    DWORD PTR [ebp-0x592],0x6e69622f
+   0xb7fda7c8:	mov    DWORD PTR [ebp-0x58e],0x2073702f
+   0xb7fda7d2:	mov    WORD PTR [ebp-0x58a],0x412d
+   0xb7fda7db:	mov    BYTE PTR [ebp-0x588],0x0
+   0xb7fda7e2:	mov    WORD PTR [ebp-0x75e],0x72
+   0xb7fda7eb:	mov    DWORD PTR [ebp-0x5d5],0x61685559
+   0xb7fda7f5:	mov    DWORD PTR [ebp-0x5d1],0x4d6b63
+   0xb7fda7ff:	mov    DWORD PTR [ebp-0x6b9],0x626467
+   0xb7fda809:	mov    DWORD PTR [ebp-0x6b5],0x616469
+   0xb7fda813:	mov    DWORD PTR [ebp-0x618],0x61727470
+   0xb7fda81d:	mov    WORD PTR [ebp-0x614],0x6563
+   0xb7fda826:	mov    BYTE PTR [ebp-0x612],0x0
+   0xb7fda82d:	mov    DWORD PTR [ebp-0x611],0x61727473
+   0xb7fda837:	mov    WORD PTR [ebp-0x60d],0x6563
+   0xb7fda840:	mov    BYTE PTR [ebp-0x60b],0x0
+   0xb7fda847:	mov    DWORD PTR [ebp-0x60a],0x6172746c
+   0xb7fda851:	mov    WORD PTR [ebp-0x606],0x6563
+   0xb7fda85a:	mov    BYTE PTR [ebp-0x604],0x0
+   0xb7fda861:	mov    DWORD PTR [ebp-0x5cd],0x61776861
+   0xb7fda86b:	mov    DWORD PTR [ebp-0x5c9],0x656472
+   0xb7fda875:	mov    DWORD PTR [ebp-0x603],0x6172746b
+   0xb7fda87f:	mov    WORD PTR [ebp-0x5ff],0x6563
+   0xb7fda888:	mov    BYTE PTR [ebp-0x5fd],0x0
+   0xb7fda88f:	mov    DWORD PTR [ebp-0x5c5],0x69766976
+   0xb7fda899:	mov    DWORD PTR [ebp-0x5c1],0x74636573
+   0xb7fda8a3:	mov    BYTE PTR [ebp-0x5bd],0x0
+   0xb7fda8aa:	mov    DWORD PTR [ebp-0x5fc],0x61727476
+   0xb7fda8b4:	mov    WORD PTR [ebp-0x5f8],0x6563
+   0xb7fda8bd:	mov    BYTE PTR [ebp-0x5f6],0x0
+   0xb7fda8c4:	mov    DWORD PTR [ebp-0x6b1],0x626476
+   0xb7fda8ce:	mov    BYTE PTR [ebp-0x48c],0x0
+   0xb7fda8d5:	lea    eax,[ebp-0x5dd]
+   0xb7fda8db:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda8df:	lea    eax,[ebp-0x48c]
+   0xb7fda8e5:	mov    DWORD PTR [esp],eax
+   0xb7fda8e8:	mov    eax,DWORD PTR [ebp-0x6ec]
+   0xb7fda8ee:	call   eax
+   0xb7fda8f0:	lea    eax,[ebp-0x5d5]
+   0xb7fda8f6:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda8fa:	lea    eax,[ebp-0x48c]
+   0xb7fda900:	mov    DWORD PTR [esp],eax
+   0xb7fda903:	mov    eax,DWORD PTR [ebp-0x6ec]
+   0xb7fda909:	call   eax
+   0xb7fda90b:	lea    eax,[ebp-0x5cd]
+   0xb7fda911:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda915:	lea    eax,[ebp-0x48c]
+   0xb7fda91b:	mov    DWORD PTR [esp],eax
+   0xb7fda91e:	mov    eax,DWORD PTR [ebp-0x6ec]
+   0xb7fda924:	call   eax
+   0xb7fda926:	lea    eax,[ebp-0x59d]
+   0xb7fda92c:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fda930:	lea    eax,[ebp-0x48c]
+   0xb7fda936:	mov    DWORD PTR [esp],eax
+   0xb7fda939:	mov    eax,DWORD PTR [ebp-0x6ec]
+   0xb7fda93f:	call   eax
+   0xb7fda941:	mov    DWORD PTR [ebp-0x44c],0x6361480a
+   0xb7fda94b:	mov    DWORD PTR [ebp-0x448],0x676e696b
+   0xb7fda955:	mov    DWORD PTR [ebp-0x444],0x74656420
+   0xb7fda95f:	mov    DWORD PTR [ebp-0x440],0x65746365
+   0xb7fda969:	mov    DWORD PTR [ebp-0x43c],0x6b202c64
+   0xb7fda973:	mov    DWORD PTR [ebp-0x438],0x696c6c69
+   0xb7fda97d:	mov    DWORD PTR [ebp-0x434],0x6520676e
+   0xb7fda987:	mov    DWORD PTR [ebp-0x430],0x79726576
+   0xb7fda991:	mov    DWORD PTR [ebp-0x42c],0x6e696874
+   0xb7fda99b:	mov    DWORD PTR [ebp-0x428],0x6e612067
+   0xb7fda9a5:	mov    DWORD PTR [ebp-0x424],0x65722064
+   0xb7fda9af:	mov    DWORD PTR [ebp-0x420],0x74726f70
+   0xb7fda9b9:	mov    DWORD PTR [ebp-0x41c],0x20676e69
+   0xb7fda9c3:	mov    DWORD PTR [ebp-0x418],0x7563636f
+   0xb7fda9cd:	mov    DWORD PTR [ebp-0x414],0x6e657272
+   0xb7fda9d7:	mov    DWORD PTR [ebp-0x410],0xa6563
+   0xb7fda9e1:	lea    eax,[ebp-0x6b9]
+   0xb7fda9e7:	mov    DWORD PTR [ebp-0x6e0],eax
+   0xb7fda9ed:	lea    eax,[ebp-0x6b5]
+   0xb7fda9f3:	mov    DWORD PTR [ebp-0x6dc],eax
+   0xb7fda9f9:	lea    eax,[ebp-0x618]
+   0xb7fda9ff:	mov    DWORD PTR [ebp-0x6d8],eax
+   0xb7fdaa05:	lea    eax,[ebp-0x611]
+   0xb7fdaa0b:	mov    DWORD PTR [ebp-0x6d4],eax
+   0xb7fdaa11:	lea    eax,[ebp-0x60a]
+   0xb7fdaa17:	mov    DWORD PTR [ebp-0x6d0],eax
+   0xb7fdaa1d:	lea    eax,[ebp-0x603]
+   0xb7fdaa23:	mov    DWORD PTR [ebp-0x6cc],eax
+   0xb7fdaa29:	lea    eax,[ebp-0x5c5]
+   0xb7fdaa2f:	mov    DWORD PTR [ebp-0x6c8],eax
+   0xb7fdaa35:	lea    eax,[ebp-0x5fc]
+   0xb7fdaa3b:	mov    DWORD PTR [ebp-0x6c4],eax
+   0xb7fdaa41:	lea    eax,[ebp-0x6b1]
+   0xb7fdaa47:	mov    DWORD PTR [ebp-0x6c0],eax
+   0xb7fdaa4d:	lea    eax,[ebp-0x75e]
+   0xb7fdaa53:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdaa57:	lea    eax,[ebp-0x592]
+   0xb7fdaa5d:	mov    DWORD PTR [esp],eax
+   0xb7fdaa60:	mov    eax,DWORD PTR [ebp-0x704]
+   0xb7fdaa66:	call   eax
+   0xb7fdaa68:	mov    DWORD PTR [ebp-0x6e8],eax
+   0xb7fdaa6e:	cmp    DWORD PTR [ebp-0x6e8],0x0
+   0xb7fdaa75:	jne    0xb7fdaa8b
+   0xb7fdaa77:	mov    DWORD PTR [esp],0xffffffff
+   0xb7fdaa7e:	mov    eax,DWORD PTR [ebp-0x728]
+   0xb7fdaa84:	call   eax
+   0xb7fdaa86:	jmp    0xb7fdab28
+   0xb7fdaa8b:	jmp    0xb7fdab28
+   0xb7fdaa90:	mov    DWORD PTR [ebp-0x758],0x0
+   0xb7fdaa9a:	jmp    0xb7fdab1b
+   0xb7fdaa9c:	mov    eax,DWORD PTR [ebp-0x758]
+   0xb7fdaaa2:	mov    eax,DWORD PTR [ebp+eax*4-0x6e0]
+   0xb7fdaaa9:	mov    DWORD PTR [esp],eax
+   0xb7fdaaac:	mov    eax,DWORD PTR [ebp-0x6f8]
+   0xb7fdaab2:	call   eax
+   0xb7fdaab4:	mov    edx,eax
+   0xb7fdaab6:	mov    eax,DWORD PTR [ebp-0x758]
+   0xb7fdaabc:	mov    eax,DWORD PTR [ebp+eax*4-0x6e0]
+   0xb7fdaac3:	mov    DWORD PTR [esp+0x8],edx
+   0xb7fdaac7:	lea    edx,[ebp-0x40c]
+   0xb7fdaacd:	add    edx,0x19
+   0xb7fdaad0:	mov    DWORD PTR [esp+0x4],edx
+   0xb7fdaad4:	mov    DWORD PTR [esp],eax
+   0xb7fdaad7:	mov    eax,DWORD PTR [ebp-0x710]
+   0xb7fdaadd:	call   eax
+   0xb7fdaadf:	test   eax,eax
+   0xb7fdaae1:	jne    0xb7fdab14
+   0xb7fdaae3:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdaae9:	mov    DWORD PTR [esp],eax
+   0xb7fdaaec:	mov    eax,DWORD PTR [ebp-0x700]
+   0xb7fdaaf2:	call   eax
+   0xb7fdaaf4:	lea    eax,[ebp-0x44c]
+   0xb7fdaafa:	mov    DWORD PTR [esp],eax
+   0xb7fdaafd:	mov    eax,DWORD PTR [ebp-0x744]
+   0xb7fdab03:	call   eax
+   0xb7fdab05:	mov    DWORD PTR [esp],0xffffffff
+   0xb7fdab0c:	mov    eax,DWORD PTR [ebp-0x728]
+   0xb7fdab12:	call   eax
+   0xb7fdab14:	add    DWORD PTR [ebp-0x758],0x1
+   0xb7fdab1b:	cmp    DWORD PTR [ebp-0x758],0x8
+   0xb7fdab22:	jle    0xb7fdaa9c
+   0xb7fdab28:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdab2e:	mov    DWORD PTR [esp+0x8],eax
+   0xb7fdab32:	mov    DWORD PTR [esp+0x4],0x3ff
+   0xb7fdab3a:	lea    eax,[ebp-0x40c]
+   0xb7fdab40:	mov    DWORD PTR [esp],eax
+   0xb7fdab43:	mov    eax,DWORD PTR [ebp-0x6fc]
+   0xb7fdab49:	call   eax
+   0xb7fdab4b:	test   eax,eax
+   0xb7fdab4d:	jne    0xb7fdaa90
+   0xb7fdab53:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdab59:	mov    DWORD PTR [esp],eax
+   0xb7fdab5c:	mov    eax,DWORD PTR [ebp-0x700]
+   0xb7fdab62:	call   eax
+   0xb7fdab64:	mov    eax,DWORD PTR [ebp-0x77c]
+   0xb7fdab6a:	add    eax,0x4
+   0xb7fdab6d:	mov    eax,DWORD PTR [eax]
+   0xb7fdab6f:	mov    eax,DWORD PTR [eax]
+   0xb7fdab71:	mov    DWORD PTR [esp+0x8],0x6
+   0xb7fdab79:	lea    edx,[ebp-0x626]
+   0xb7fdab7f:	mov    DWORD PTR [esp+0x4],edx
+   0xb7fdab83:	mov    DWORD PTR [esp],eax
+   0xb7fdab86:	mov    eax,DWORD PTR [ebp-0x720]
+   0xb7fdab8c:	call   eax
+   0xb7fdab8e:	cmp    eax,0xffffffff
+   0xb7fdab91:	je     0xb7fdabc0
+   0xb7fdab93:	nop
+   0xb7fdab94:	lea    eax,[ebp-0x75e]
+   0xb7fdab9a:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdab9e:	lea    eax,[ebp-0x592]
+   0xb7fdaba4:	mov    DWORD PTR [esp],eax
+   0xb7fdaba7:	mov    eax,DWORD PTR [ebp-0x704]
+   0xb7fdabad:	call   eax
+   0xb7fdabaf:	mov    DWORD PTR [ebp-0x6e8],eax
+   0xb7fdabb5:	cmp    DWORD PTR [ebp-0x6e8],0x0
+   0xb7fdabbc:	jne    0xb7fdabd6
+   0xb7fdabbe:	jmp    0xb7fdabc2
+   0xb7fdabc0:	jmp    0xb7fdab64
+   0xb7fdabc2:	mov    DWORD PTR [esp],0xffffffff
+   0xb7fdabc9:	mov    eax,DWORD PTR [ebp-0x728]
+   0xb7fdabcf:	call   eax
+   0xb7fdabd1:	jmp    0xb7fdac73
+   0xb7fdabd6:	jmp    0xb7fdac73
+   0xb7fdabdb:	mov    DWORD PTR [ebp-0x758],0x0
+   0xb7fdabe5:	jmp    0xb7fdac66
+   0xb7fdabe7:	mov    eax,DWORD PTR [ebp-0x758]
+   0xb7fdabed:	mov    eax,DWORD PTR [ebp+eax*4-0x6e0]
+   0xb7fdabf4:	mov    DWORD PTR [esp],eax
+   0xb7fdabf7:	mov    eax,DWORD PTR [ebp-0x6f8]
+   0xb7fdabfd:	call   eax
+   0xb7fdabff:	mov    edx,eax
+   0xb7fdac01:	mov    eax,DWORD PTR [ebp-0x758]
+   0xb7fdac07:	mov    eax,DWORD PTR [ebp+eax*4-0x6e0]
+   0xb7fdac0e:	mov    DWORD PTR [esp+0x8],edx
+   0xb7fdac12:	lea    edx,[ebp-0x40c]
+   0xb7fdac18:	add    edx,0x19
+   0xb7fdac1b:	mov    DWORD PTR [esp+0x4],edx
+   0xb7fdac1f:	mov    DWORD PTR [esp],eax
+   0xb7fdac22:	mov    eax,DWORD PTR [ebp-0x710]
+   0xb7fdac28:	call   eax
+   0xb7fdac2a:	test   eax,eax
+   0xb7fdac2c:	jne    0xb7fdac5f
+   0xb7fdac2e:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdac34:	mov    DWORD PTR [esp],eax
+   0xb7fdac37:	mov    eax,DWORD PTR [ebp-0x700]
+   0xb7fdac3d:	call   eax
+   0xb7fdac3f:	lea    eax,[ebp-0x44c]
+   0xb7fdac45:	mov    DWORD PTR [esp],eax
+   0xb7fdac48:	mov    eax,DWORD PTR [ebp-0x744]
+   0xb7fdac4e:	call   eax
+   0xb7fdac50:	mov    DWORD PTR [esp],0xffffffff
+   0xb7fdac57:	mov    eax,DWORD PTR [ebp-0x728]
+   0xb7fdac5d:	call   eax
+   0xb7fdac5f:	add    DWORD PTR [ebp-0x758],0x1
+   0xb7fdac66:	cmp    DWORD PTR [ebp-0x758],0x8
+   0xb7fdac6d:	jle    0xb7fdabe7
+   0xb7fdac73:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdac79:	mov    DWORD PTR [esp+0x8],eax
+   0xb7fdac7d:	mov    DWORD PTR [esp+0x4],0x3ff
+   0xb7fdac85:	lea    eax,[ebp-0x40c]
+   0xb7fdac8b:	mov    DWORD PTR [esp],eax
+   0xb7fdac8e:	mov    eax,DWORD PTR [ebp-0x6fc]
+   0xb7fdac94:	call   eax
+   0xb7fdac96:	test   eax,eax
+   0xb7fdac98:	jne    0xb7fdabdb
+   0xb7fdac9e:	mov    eax,DWORD PTR [ebp-0x6e8]
+   0xb7fdaca4:	mov    DWORD PTR [esp],eax
+   0xb7fdaca7:	mov    eax,DWORD PTR [ebp-0x700]
+   0xb7fdacad:	call   eax
+   0xb7fdacaf:	mov    DWORD PTR [esp+0x8],0x6
+   0xb7fdacb7:	lea    eax,[ebp-0x61f]
+   0xb7fdacbd:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdacc1:	lea    eax,[ebp-0x626]
+   0xb7fdacc7:	mov    DWORD PTR [esp],eax
+   0xb7fdacca:	mov    eax,DWORD PTR [ebp-0x710]
+   0xb7fdacd0:	call   eax
+   0xb7fdacd2:	test   eax,eax
+   0xb7fdacd4:	jne    0xb7fdaeb2
+   0xb7fdacda:	mov    DWORD PTR [ebp-0x587],0x302e3031
+   0xb7fdace4:	mov    DWORD PTR [ebp-0x583],0x2e36362e
+   0xb7fdacee:	mov    WORD PTR [ebp-0x57f],0x3737
+   0xb7fdacf7:	mov    BYTE PTR [ebp-0x57d],0x0
+   0xb7fdacfe:	mov    DWORD PTR [esp+0x8],0x0
+   0xb7fdad06:	mov    DWORD PTR [esp+0x4],0x1
+   0xb7fdad0e:	mov    DWORD PTR [esp],0x2
+   0xb7fdad15:	mov    eax,DWORD PTR [ebp-0x738]
+   0xb7fdad1b:	call   eax
+   0xb7fdad1d:	mov    DWORD PTR [ebp-0x6e4],eax
+   0xb7fdad23:	mov    DWORD PTR [esp+0x8],0x10
+   0xb7fdad2b:	mov    DWORD PTR [esp+0x4],0x0
+   0xb7fdad33:	lea    eax,[ebp-0x57c]
+   0xb7fdad39:	mov    DWORD PTR [esp],eax
+   0xb7fdad3c:	mov    eax,DWORD PTR [ebp-0x734]
+   0xb7fdad42:	call   eax
+   0xb7fdad44:	mov    WORD PTR [ebp-0x57c],0x2
+   0xb7fdad4d:	lea    eax,[ebp-0x587]
+   0xb7fdad53:	mov    DWORD PTR [esp],eax
+   0xb7fdad56:	mov    eax,DWORD PTR [ebp-0x730]
+   0xb7fdad5c:	call   eax
+   0xb7fdad5e:	mov    DWORD PTR [ebp-0x578],eax
+   0xb7fdad64:	mov    DWORD PTR [esp],0x2b69
+   0xb7fdad6b:	mov    eax,DWORD PTR [ebp-0x72c]
+   0xb7fdad71:	call   eax
+   0xb7fdad73:	mov    WORD PTR [ebp-0x57a],ax
+   0xb7fdad7a:	mov    DWORD PTR [esp+0x8],0x10
+   0xb7fdad82:	lea    eax,[ebp-0x57c]
+   0xb7fdad88:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdad8c:	mov    eax,DWORD PTR [ebp-0x6e4]
+   0xb7fdad92:	mov    DWORD PTR [esp],eax
+   0xb7fdad95:	mov    eax,DWORD PTR [ebp-0x724]
+   0xb7fdad9b:	call   eax
+   0xb7fdad9d:	mov    DWORD PTR [ebp-0x754],0x0
+   0xb7fdada7:	jmp    0xb7fdadfb
+   0xb7fdada9:	lea    edx,[ebp-0x559]
+   0xb7fdadaf:	mov    eax,DWORD PTR [ebp-0x754]
+   0xb7fdadb5:	add    eax,edx
+   0xb7fdadb7:	movzx  ebx,BYTE PTR [eax]
+   0xb7fdadba:	lea    eax,[ebp-0x61f]
+   0xb7fdadc0:	mov    DWORD PTR [esp],eax
+   0xb7fdadc3:	mov    eax,DWORD PTR [ebp-0x6f8]
+   0xb7fdadc9:	call   eax
+   0xb7fdadcb:	mov    esi,eax
+   0xb7fdadcd:	mov    eax,DWORD PTR [ebp-0x754]
+   0xb7fdadd3:	cdq    
+   0xb7fdadd4:	idiv   esi
+   0xb7fdadd6:	mov    ecx,edx
+   0xb7fdadd8:	mov    eax,ecx
+   0xb7fdadda:	movzx  eax,BYTE PTR [ebp+eax*1-0x61f]
+   0xb7fdade2:	xor    eax,ebx
+   0xb7fdade4:	lea    ecx,[ebp-0x50c]
+   0xb7fdadea:	mov    edx,DWORD PTR [ebp-0x754]
+   0xb7fdadf0:	add    edx,ecx
+   0xb7fdadf2:	mov    BYTE PTR [edx],al
+   0xb7fdadf4:	add    DWORD PTR [ebp-0x754],0x1
+   0xb7fdadfb:	lea    eax,[ebp-0x559]
+   0xb7fdae01:	mov    DWORD PTR [esp],eax
+   0xb7fdae04:	mov    eax,DWORD PTR [ebp-0x6f8]
+   0xb7fdae0a:	call   eax
+   0xb7fdae0c:	cmp    eax,DWORD PTR [ebp-0x754]
+   0xb7fdae12:	jg     0xb7fdada9
+   0xb7fdae14:	lea    eax,[ebp-0x559]
+   0xb7fdae1a:	mov    DWORD PTR [esp],eax
+   0xb7fdae1d:	mov    eax,DWORD PTR [ebp-0x6f8]
+   0xb7fdae23:	call   eax
+   0xb7fdae25:	mov    DWORD PTR [esp+0xc],0x0
+   0xb7fdae2d:	mov    DWORD PTR [esp+0x8],eax
+   0xb7fdae31:	lea    eax,[ebp-0x50c]
+   0xb7fdae37:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdae3b:	mov    eax,DWORD PTR [ebp-0x6e4]
+   0xb7fdae41:	mov    DWORD PTR [esp],eax
+   0xb7fdae44:	mov    eax,DWORD PTR [ebp-0x6f4]
+   0xb7fdae4a:	call   eax
+   0xb7fdae4c:	mov    DWORD PTR [esp+0xc],0x0
+   0xb7fdae54:	mov    DWORD PTR [esp+0x8],0x40
+   0xb7fdae5c:	lea    eax,[ebp-0x4cc]
+   0xb7fdae62:	mov    DWORD PTR [esp+0x4],eax
+   0xb7fdae66:	mov    eax,DWORD PTR [ebp-0x6e4]
+   0xb7fdae6c:	mov    DWORD PTR [esp],eax
+   0xb7fdae6f:	mov    eax,DWORD PTR [ebp-0x6f0]
+   0xb7fdae75:	call   eax
+   0xb7fdae77:	mov    eax,DWORD PTR [ebp-0x77c]
+   0xb7fdae7d:	mov    eax,DWORD PTR [eax]
+   0xb7fdae7f:	add    eax,0x4
+   0xb7fdae82:	mov    eax,DWORD PTR [eax]
+   0xb7fdae84:	mov    DWORD PTR [esp+0x8],0x14
+   0xb7fdae8c:	lea    edx,[ebp-0x4cc]
+   0xb7fdae92:	mov    DWORD PTR [esp+0x4],edx
+   0xb7fdae96:	mov    DWORD PTR [esp],eax
+   0xb7fdae99:	mov    eax,DWORD PTR [ebp-0x71c]
+   0xb7fdae9f:	call   eax
+   0xb7fdaea1:	mov    eax,DWORD PTR [ebp-0x6e4]
+   0xb7fdaea7:	mov    DWORD PTR [esp],eax
+   0xb7fdaeaa:	mov    eax,DWORD PTR [ebp-0x70c]
+   0xb7fdaeb0:	call   eax
+   0xb7fdaeb2:	nop
+   0xb7fdaeb3:	mov    eax,DWORD PTR [ebp-0xc]
+   0xb7fdaeb6:	xor    eax,DWORD PTR gs:0x14
+   0xb7fdaebd:	je     0xb7fdaec4
+   0xb7fdaebf:	call   0xb7fd9ec3
+   0xb7fdaec4:	add    esp,0x790
+   0xb7fdaeca:	pop    ebx
+   0xb7fdaecb:	pop    esi
+   0xb7fdaecc:	pop    ebp
+   0xb7fdaecd:	ret    
+```
